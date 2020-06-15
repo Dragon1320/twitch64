@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Twitch64",
+  "version": "0.1.0",
+
+  "description": "Encode and decode base64 in Twitch chat.",
+
+  "icons": {
+    "48": "icons/twitch64-48.png",
+    "96": "icons/twitch64-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.twitch.tv/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}
